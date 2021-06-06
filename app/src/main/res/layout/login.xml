@@ -17,7 +17,7 @@
             app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.631"
             android:background="#0DDFA3"/>
     <TextView
-            android:text="Login"
+            android:text="Welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/loginTitle"
             android:textSize="36sp" app:layout_constraintTop_toTopOf="parent"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editEmail"
             app:layout_constraintTop_toBottomOf="@+id/loginTitle" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="84dp" android:hint="email"
             android:textColorHint="#0DC5DD"/>
@@ -38,8 +38,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editTextTextPassword"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            android:id="@+id/editPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editEmail"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.057"
             android:hint="password" android:textColorHint="#08CACA"/>
