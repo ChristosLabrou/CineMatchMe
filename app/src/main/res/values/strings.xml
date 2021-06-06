@@ -13,4 +13,10 @@
     <string name="random_button_text">Random</string>
     <string name="count_button_text">Count</string>
     <string name="toast_message">AAA</string>
+    <string name="title_activity_add_movie">AddMovie</string>
+    <string name="next">Next</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="addMovieTitle">We need your help!</string>
+    <string name="addMovieText">Our App is just starting out and we have a ton more movies to include! You could help with this by suggesting movies you haven\'t seen during your swiping</string>
+    <string name="addMovieButton">Add A Movie!</string>
 </resources>
