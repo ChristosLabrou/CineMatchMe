@@ -1,9 +1,11 @@
-package com.example.cinematchme;
+package com.example.myapplication;
+
+import com.example.myapplication.User;
 
 public class Review {
     int id;
     User author;
-    Movie about;
+    com.example.cinematchme.Movie about;
     int overall_rating;
     String text;
 }

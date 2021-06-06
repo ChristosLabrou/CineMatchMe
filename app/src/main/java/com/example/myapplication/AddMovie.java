@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -18,20 +19,20 @@ import com.example.myapplication.databinding.ActivityAddMovieBinding;
 public class AddMovie extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityAddMovieBinding binding;
+    //private ActivityAddMovieBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityAddMovieBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        //binding = ActivityAddMovieBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_add_movie);
 
-        setSupportActionBar(binding.toolbar);
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_add_movie);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+//        setSupportActionBar(binding.toolbar);
+//
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_add_movie);
+//        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
 //        binding.fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -41,7 +42,10 @@ public class AddMovie extends AppCompatActivity {
 //            }
  //       });
     }
-
+    public void goToSearchTitle(View view){
+        Intent intent = new Intent(this, SearchTitle.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_add_movie);

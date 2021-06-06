@@ -1,8 +1,10 @@
-package com.example.cinematchme;
+package com.example.myapplication;
+
+import com.example.myapplication.User;
 
 public class Statistics {
     int id;
     User user;
-    Movie.genre preferences[];
+    com.example.cinematchme.Movie.genre preferences[];
 
 }
