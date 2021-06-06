@@ -1,5 +1,5 @@
-package com.example.cinematchme;
+package com.example.myapplication;
 
 public class App {
-    User user;
+//    User user;
 }

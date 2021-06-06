@@ -1,4 +1,4 @@
-package com.example.cinematchme;
+package com.example.myapplication;
 
 public class Movie {
     int id;
