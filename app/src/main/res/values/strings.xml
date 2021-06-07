@@ -19,4 +19,5 @@
     <string name="addMovieTitle">We need your help!</string>
     <string name="addMovieText">Our App is just starting out and we have a ton more movies to include! You could help with this by suggesting movies you haven\'t seen during your swiping</string>
     <string name="addMovieButton">Add A Movie!</string>
+    <string name="title_activity_movie_exists_popup">movieExistsPopup</string>
 </resources>

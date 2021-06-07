@@ -4,31 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchTitle">
+    tools:context=".First3Fragment">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <TextView
+        android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:imeActionLabel="@string/addMovieTitle"
-        android:inputType="textPersonName"
-        android:text="Movie Title"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="213dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="checkIfMovieExists"
-        android:text="Search"
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />
 </androidx.constraintlayout.widget.ConstraintLayout>
