@@ -40,14 +40,7 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.random_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int currentCount = Integer.parseInt(showCountTextView.getText().toString());
-                FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount);
-                NavHostFragment.findNavController(FirstFragment.this).navigate(action);
-            }
-        });
+
         view.findViewById(R.id.toast_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,13 +55,7 @@ public class FirstFragment extends Fragment {
             }
         });
 
-        view.findViewById(R.id.loginPage).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_Login);
-            }
-        });
+
 
 
     }

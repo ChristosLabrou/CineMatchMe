@@ -6,39 +6,34 @@
             app:startDestination="@id/login">
 
     <fragment
-            android:id="@+id/FirstFragment"
-            android:name="com.example.myapplication.FirstFragment"
-            android:label="@string/first_fragment_label"
-            tools:layout="@layout/fragment_first">
-
-        <action
-                android:id="@+id/action_FirstFragment_to_SecondFragment"
-                app:destination="@id/SecondFragment"
-        />
-        <action
-                android:id="@+id/action_FirstFragment_to_Login"
-                app:destination="@id/login"
-        />
-    </fragment>
-    <fragment
-            android:id="@+id/SecondFragment"
-            android:name="com.example.myapplication.SecondFragment"
-            android:label="@string/second_fragment_label"
-            tools:layout="@layout/fragment_second">
-
-        <action
-                android:id="@+id/action_SecondFragment_to_FirstFragment"
-                app:destination="@id/FirstFragment"/>
-        <argument android:name="myArg" app:argType="integer"/>
-    </fragment>
-    <fragment
             android:id="@+id/login"
             android:name="com.example.myapplication.User"
             android:label="Login"
             tools:layout="@layout/login">
-
         <action
-                android:id="@+id/action_Login_to_FirstFragment"
-                app:destination="@id/FirstFragment"/>
+            android:id="@+id/action_login_to_addMovieFragment"
+            app:destination="@id/addMovieFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addMovieFragment"
+        android:name="com.example.myapplication.addMovieFragment"
+        android:label="addMovieFragment" >
+        <action
+            android:id="@+id/action_addMovieFragment_to_searchTitleFragment"
+            app:destination="@id/searchTitleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchTitleFragment"
+        android:name="com.example.myapplication.searchTitleFragment"
+        android:label="fragment_search_title"
+        tools:layout="@layout/fragment_search_title" >
+        <action
+            android:id="@+id/action_searchTitleFragment_to_addMovieFormFragment"
+            app:destination="@id/addMovieFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMovieFormFragment"
+        android:name="com.example.myapplication.addMovieFormFragment"
+        android:label="fragment_add_movie_form"
+        tools:layout="@layout/fragment_add_movie_form" />
 </navigation>

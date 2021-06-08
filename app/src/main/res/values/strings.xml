@@ -21,4 +21,6 @@
     <string name="addMovieButton">Add A Movie!</string>
     <string name="title_activity_movie_exists_popup">movieExistsPopup</string>
     <string name="title_activity_add_movie_form">addMovieForm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

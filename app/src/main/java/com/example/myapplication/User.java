@@ -20,7 +20,7 @@ public class User extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.login, container, false);
     }
-
+    @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -28,7 +28,7 @@ public class User extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(User.this)
-                        .navigate(R.id.action_Login_to_FirstFragment);
+                        .navigate(R.id.action_login_to_addMovieFragment);
             }
         });
     }
