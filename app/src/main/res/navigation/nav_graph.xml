@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_login_to_addMovieFragment"
             app:destination="@id/addMovieFragment" />
+        <action
+            android:id="@+id/action_login_to_rateMovie"
+            app:destination="@id/rateMovie" />
     </fragment>
     <fragment
         android:id="@+id/addMovieFragment"
@@ -36,4 +39,18 @@
         android:name="com.example.myapplication.addMovieFormFragment"
         android:label="fragment_add_movie_form"
         tools:layout="@layout/fragment_add_movie_form" />
+    <fragment
+        android:id="@+id/rateMovie"
+        android:name="com.example.myapplication.rateMovie"
+        android:label="fragment_rate_movie"
+        tools:layout="@layout/fragment_rate_movie" >
+        <action
+            android:id="@+id/action_rateMovie_to_rateTraitsFragment"
+            app:destination="@id/rateTraitsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rateTraitsFragment"
+        android:name="com.example.myapplication.rateTraitsFragment"
+        android:label="fragment_rate_traits"
+        tools:layout="@layout/fragment_rate_traits" />
 </navigation>

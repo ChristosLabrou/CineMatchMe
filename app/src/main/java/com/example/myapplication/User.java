@@ -31,5 +31,12 @@ public class User extends Fragment {
                         .navigate(R.id.action_login_to_addMovieFragment);
             }
         });
+        view.findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(User.this)
+                        .navigate(R.id.action_login_to_rateMovie);
+            }
+        });
     }
 }
