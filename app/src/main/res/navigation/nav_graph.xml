@@ -37,8 +37,13 @@
             android:label="Login"
             tools:layout="@layout/login">
 
-        <action
-                android:id="@+id/action_Login_to_FirstFragment"
-                app:destination="@id/FirstFragment"/>
+
+        <action android:id="@+id/action_login_to_swiping" app:destination="@id/swiping"/>
     </fragment>
+    <fragment android:id="@+id/swiping" android:name="com.example.myapplication.swiping"
+              android:label="fragment_swiping" tools:layout="@layout/fragment_swiping"/>
+    <fragment android:id="@+id/profile" android:name="com.example.myapplication.profile"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+
+
 </navigation>
