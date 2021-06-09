@@ -4,15 +4,106 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context=".profile" android:id="@+id/frameLayout">
-
-    <!-- TODO: Update blank fragment layout -->
-    <Button
-            android:text="Button"
+                                                   tools:context=".profile" android:id="@+id/frameLayout"
+                                                   android:background="@color/screenBackground">
+    <TextView
+            android:text="First Name: "
+            android:layout_width="134dp"
+            android:layout_height="35dp" android:id="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintBottom_toTopOf="@+id/divider2" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="25dp" android:textColor="@color/textColors" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.689"
+            android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+    <EditText
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Paulinho"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toEndOf="@+id/textView9" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" app:layout_constraintBottom_toTopOf="@+id/divider2"
+            android:textColor="@color/textColors" android:layout_marginTop="5dp" android:layout_marginBottom="10dp"/>
+    <View
+            android:id="@+id/divider3"
+            android:layout_width="427dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/divider4"
+            android:layout_marginTop="64dp" app:layout_constraintStart_toStartOf="parent"/>
+    <View
+            android:id="@+id/divider4"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            android:layout_marginTop="64dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
-
+    <View
+            android:id="@+id/divider5"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/divider3"
+            android:layout_marginTop="64dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <View
+            android:id="@+id/divider6"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/divider5"
+            android:layout_marginTop="64dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            tools:layout_editor_absoluteY="79dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="Profile Information"
+            android:layout_width="109dp"
+            android:layout_height="49dp" android:id="@+id/textView8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/divider" app:layout_constraintVertical_bias="0.571"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/textColors" android:textSize="36dp"/>
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:layout_marginTop="64dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="First Name: "
+            android:layout_width="134dp"
+            android:layout_height="35dp" android:id="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintBottom_toTopOf="@+id/divider2" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="25dp" android:textColor="@color/textColors" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.689"
+            android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Paulinho"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toEndOf="@+id/textView9" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" app:layout_constraintBottom_toTopOf="@+id/divider2"
+            android:textColor="@color/textColors" android:layout_marginTop="5dp" android:layout_marginBottom="10dp"/>
+    <TextView
+            android:text="Last Name: "
+            android:layout_width="133dp"
+            android:layout_height="39dp" android:id="@+id/lastname"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:layout_constraintBottom_toTopOf="@+id/divider4" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:textColor="@color/textColors"
+            android:textSize="25dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
