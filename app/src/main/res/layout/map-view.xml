@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/screenBackground">
+    <ImageView
+            android:layout_width="412dp"
+            android:layout_height="370dp" app:srcCompat="@drawable/mapview5" android:id="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="72dp"/>
+    <TextView
+            android:text="Welcome to mapview, here you are see your fellow users !"
+            android:layout_width="219dp"
+            android:layout_height="38dp" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            android:textColor="@color/textColors"/>
+    <TextView
+            android:text="Km Radius"
+            android:layout_width="151dp"
+            android:layout_height="43dp" android:id="@+id/textView6"
+            android:textColor="@color/textColors" android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.154"/>
+    <EditText
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextNumber2"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.245" android:hint="50" android:textColorHint="@color/textColors"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
