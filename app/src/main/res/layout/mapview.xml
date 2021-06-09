@@ -23,8 +23,8 @@
             android:layout_height="43dp" android:id="@+id/textView6"
             android:textColor="@color/textColors" android:textSize="30sp"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.154"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="48dp"/>
     <EditText
             android:layout_width="81dp"
             android:layout_height="45dp"
