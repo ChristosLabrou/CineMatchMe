@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatActivity"></activity>
-        <activity android:name=".GroupListActivity" />
+        <activity android:name="utils.ChatActivity"></activity>
+        <activity android:name="utils.GroupListActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="utils.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

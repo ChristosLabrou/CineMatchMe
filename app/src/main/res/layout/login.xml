@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" android:id="@+id/login"
-        android:background="@color/screenBackground">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/login"
+    android:background="@color/screenBackground">
 
 
     <Button
-            android:text="Login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/back"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.631"
-            android:background="#0DDFA3"/>
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/getin"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.631"
+        android:background="#0DDFA3"/>
     <TextView
-            android:text="Welcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/loginTitle"
-            android:textSize="36sp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.179" android:textColor="#00A9BF"/>
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/loginTitle"
+        android:textSize="36sp" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintVertical_bias="0.179" android:textColor="#00A9BF"/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editEmail"
-            app:layout_constraintTop_toBottomOf="@+id/loginTitle" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="84dp" android:hint="email"
-            android:textColorHint="#0DC5DD"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/loginTitle" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="84dp" android:hint="email"
+        android:textColorHint="#0DC5DD"/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/editPassword"
-            app:layout_constraintTop_toBottomOf="@+id/editEmail"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.057"
-            android:hint="password" android:textColorHint="#08CACA"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.057"
+        android:hint="password" android:textColorHint="#08CACA"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

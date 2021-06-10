@@ -1,4 +1,4 @@
-package models;
+package com.example.myapplication.models;
 
 import com.example.myapplication.User;
 import com.stfalcon.chatkit.commons.models.IUser;
