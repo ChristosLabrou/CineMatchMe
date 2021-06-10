@@ -42,8 +42,20 @@
     </fragment>
     <fragment android:id="@+id/swiping" android:name="com.example.myapplication.swiping"
               android:label="fragment_swiping" tools:layout="@layout/fragment_swiping"/>
+
+
     <fragment android:id="@+id/profile" android:name="com.example.myapplication.profile"
-              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile">
+        <action android:id="@+id/action_profile_to_statistic" app:destination="@id/statistic"/>
+    </fragment>
+
+    <fragment android:id="@+id/statistics_users" android:name="com.example.myapplication.statistics_users"
+              android:label="fragment_statistics_users" tools:layout="@layout/fragment_statistics_users"/>
+
+    <fragment android:id="@+id/statistic" android:name="com.example.myapplication.statistic"
+              android:label="fragment_statistic" tools:layout="@layout/fragment_statistic">
+        <action android:id="@+id/action_statistic_to_statistics_users" app:destination="@id/statistics_users"/>
+    </fragment>
 
 
 </navigation>

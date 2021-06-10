@@ -1,19 +1,17 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.navigation.fragment.NavHostFragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link profile#newInstance} factory method to
+ * Use the {@link statistics_users#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class profile extends Fragment {
+public class statistics_users extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +22,7 @@ public class profile extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public profile() {
+    public statistics_users() {
         // Required empty public constructor
     }
 
@@ -34,11 +32,11 @@ public class profile extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment profile.
+     * @return A new instance of fragment statistics_users.
      */
     // TODO: Rename and change types and number of parameters
-    public static profile newInstance(String param1, String param2) {
-        profile fragment = new profile();
+    public static statistics_users newInstance(String param1, String param2) {
+        statistics_users fragment = new statistics_users();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,19 +57,6 @@ public class profile extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        return inflater.inflate(R.layout.fragment_profile, container, false);
-    }
-
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        view.findViewById(R.id.statistics).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(profile.this)
-                        .navigate(R.id.action_profile_to_statistic);
-            }
-        });
+        return inflater.inflate(R.layout.fragment_statistics_users, container, false);
     }
 }
