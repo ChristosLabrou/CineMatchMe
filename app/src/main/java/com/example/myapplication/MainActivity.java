@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+
+import com.google.android.gms.common.internal.Constants;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.security.acl.Group;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+        init CometChat();
     }
 
     @Override
@@ -51,5 +55,26 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+    private void redirectToGroupListScreen() {
+        GroupListActivity.start( this;)
+
+    }
+    private void initCometChat() {
+        String appID = "APP_ID"; // Replace with your App ID
+        String region = "REGION"; // Replace with your App Region ("eu" or "us")
+
+        AppSettings appSettings=new AppSettings.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region).build();
+
+        CometChat.init(this, Constants.APP_ID, appID,appSettings, new CometChat.CallbackListener<String>() {
+            @Override
+            public void onSuccess(String successMessage) {
+                redirectToGroupListScreen();
+            }
+            @Override
+            public void onError(CometChatException e) {
+                Log.d(TAG, "Initialization failed with exception: " + e.getMessage());
+            }
+        });
+
 
 }
