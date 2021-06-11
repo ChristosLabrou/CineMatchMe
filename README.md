@@ -8,45 +8,6 @@ A tinder like application, for people who love movies but at the same time don't
 
 There are 3 types of subscriptions. ( FREE, LITE, PREMIUM) 
 
-## Demo 
-
-### Authentication screen ###
-
-
-![GitHub Logo](/images/Login.jpg)
-
-
-### Departments ###
-
-![GitHub Logo](/images/Departments.jpg)
-
-
-### Create Department ###
-
-![GitHub Logo](/images/CreateDepartment.jpg)
-
-
-### Edit Department ###
-
-![GitHub Logo](/images/EditDepartment.jpg)
-
-
-### Employees ###
-
-![GitHub Logo](/images/Employees.jpg)
-
-
-
-### Create Employees ###
-
-![GitHub Logo](/images/CreateEmployee.jpg)
-
-
-
-### Edit Employees ###
-
-![GitHub Logo](/images/EditEmployee.jpg)
-
 ## About the project.
 
 ### Backend 
@@ -64,15 +25,15 @@ The styling was implemented by us.
 ## Problems we faced.
 
 The preplaning of the project included the design of some diagrams, which helped us in some ways but at the same time we didnt find very practical.
-The learning curve of Android Studio, was a bit steep, but at the end we finally overcame it
+The learning curve of Android Studio, was a bit steep, but at the end we finally overcame it.
 
 
 # Checklist for better and cleaner code.
 
-* [ ] Meaningful names with camelCase
+* [ ] Meaningful names with camelCase.
 * [ ] Create only the classes needed.
-* [ ] SQL: no queries with "?"
-* [ ] SQL: always try catch on queries
-* [ ] Dispose of useless files-methods and imports
-* [ ] Implement alerts and delete confirmations
-* [ ] Always format your code
+* [ ] SQL: no queries with "?".
+* [ ] SQL: always try catch on queries.
+* [ ] Dispose of useless files-methods and imports.
+* [ ] Implement alerts and delete confirmations.
+* [ ] Always format your code.
