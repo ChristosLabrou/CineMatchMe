@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,6 +59,14 @@ public class swiping extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_swiping, container, false);
+        View v = inflater.inflate(R.layout.fragment_swiping, container, false);
+        v.findViewById(R.id.buttonToRate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(swiping.this)
+                        .navigate(R.id.action_swiping_to_rateMovie);
+            }
+        });
+        return v;
     }
 }

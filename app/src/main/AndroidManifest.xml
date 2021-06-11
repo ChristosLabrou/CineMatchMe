@@ -10,24 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".addMovieForm"
-            android:label="@string/title_activity_add_movie_form"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".movieExistsPopup"
-            android:label="@string/title_activity_movie_exists_popup"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SearchTitle" />
-        <activity
-            android:name=".AddMovie"
-            android:label="@string/title_activity_add_movie"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">

@@ -77,7 +77,14 @@
         <action android:id="@+id/action_login_to_swiping" app:destination="@id/swiping"/>
     </fragment>
     <fragment android:id="@+id/swiping" android:name="com.example.myapplication.swiping"
-              android:label="fragment_swiping" tools:layout="@layout/fragment_swiping"/>
+              android:label="fragment_swiping" tools:layout="@layout/fragment_swiping">
+        <action
+            android:id="@+id/action_swiping_to_addMovieFragment"
+            app:destination="@id/addMovieFragment" />
+        <action
+            android:id="@+id/action_swiping_to_rateMovie"
+            app:destination="@id/rateMovie" />
+    </fragment>
 
 
     <fragment android:id="@+id/profile" android:name="com.example.myapplication.profile"
