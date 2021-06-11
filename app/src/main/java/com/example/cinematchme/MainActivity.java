@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.daprlabs.cardstack.SwipeDeck;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
@@ -24,13 +25,19 @@ public class MainActivity extends AppCompatActivity {
         // on below line we are initializing our array list and swipe deck.
         courseModalArrayList = new ArrayList<>();
         cardStack = (SwipeDeck) findViewById(R.id.swipe_deck);
-
+/*
         // on below line we are adding data to our array list.
         courseModalArrayList.add(new CourseModal("C++", "30 days", "20 Tracks", "C++ Self Paced Course", R.drawable.gfg));
         courseModalArrayList.add(new CourseModal("Java", "30 days", "20 Tracks", "Java Self Paced Course", R.drawable.gfg));
         courseModalArrayList.add(new CourseModal("Python", "30 days", "20 Tracks", "Python Self Paced Course", R.drawable.gfg));
         courseModalArrayList.add(new CourseModal("DSA", "30 days", "20 Tracks", "DSA Self Paced Course", R.drawable.gfg));
         courseModalArrayList.add(new CourseModal("PHP", "30 days", "20 Tracks", "PHP Self Paced Course", R.drawable.gfg));
+*/
+        courseModalArrayList.add(new CourseModal("Titanic", "120 minutes", "7.8", "Lorem Ipsum", R.drawable.gfg));
+        courseModalArrayList.add(new CourseModal("The Avengers", "100 minutes", "8", "Lorem Ipsum", R.drawable.gfg));
+        courseModalArrayList.add(new CourseModal("The Room", "90 minutes", "3.7", "Greatest movie of all time", R.drawable.gfg));
+
+
 
         // on below line we are creating a variable for our adapter class and passing array list to it.
         final DeckAdapter adapter = new DeckAdapter(courseModalArrayList, this);
