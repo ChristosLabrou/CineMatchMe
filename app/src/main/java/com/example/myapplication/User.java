@@ -12,7 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 
 public class User extends Fragment {
-
+    Queries q;
     int Id;
     Chat Chats[];
     User Friends[];
@@ -51,6 +51,47 @@ public class User extends Fragment {
     public void setStatistics(Statistics statistics) { this.Statistics = statistics; }
     public Statistics getStatistics() {
         return this.Statistics;
+    }
+
+    public boolean register(String firstName,String lastName,String email, String password){
+        String query ="registerUser("+firstName+","+lastName+","+email+","+password+")";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+
+    }
+    public boolean addFriend(User me,User newFriend){
+        String query ="registerUser("+me+","+newFriend+")";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+
+    }
+    public boolean removeFriend(User me,User newFriend){
+        String query ="removeFriend("+me+","+newFriend+")";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+
+    }
+    public boolean addMovie(String movieTitle){
+        String query ="suggestMovie("+movieTitle+")";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+
     }
 
 

@@ -32,7 +32,7 @@ public class Queries {
     }
 
     public boolean checkUser(String username, String password){
-        String query = "select * from User where username"+username +" and password =="+password;
+        String query = "loginCheck("+username +","+password+")";
         try {
             executeQuery(query);
             return true;
