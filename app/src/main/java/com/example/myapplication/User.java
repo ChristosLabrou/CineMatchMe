@@ -14,11 +14,45 @@ import androidx.navigation.fragment.NavHostFragment;
 public class User extends Fragment {
 
     int Id;
-    Chat chats[];
-    User friends[];
-    Subscription subscription;
-    int renown;
-    Statistics statistics;
+    Chat Chats[];
+    User Friends[];
+    Subscription Subscription;
+    int Renown;
+    Statistics Statistics;
+
+    public void setChats(Chat[] chats) {
+        this.Chats = chats;
+    }
+    public Chat[] getChats() {
+        return this.Chats;
+    }
+
+    public void setLocation(Subscription subscription) {
+        this.Subscription = subscription;
+    }
+    public Subscription getSubscription() {
+        return this.Subscription;
+    }
+
+    public void setFriends(User[] friends) {
+        this.Friends = friends;
+    }
+    public User[] getFriends() {
+        return this.Friends;
+    }
+
+    public void setRenown(int renown) {
+        this.Renown = renown;
+    }
+    public int getRenown() {
+        return this.Renown;
+    }
+
+    public void setStatistics(Statistics statistics) { this.Statistics = statistics; }
+    public Statistics getStatistics() {
+        return this.Statistics;
+    }
+
 
 
     @Override
