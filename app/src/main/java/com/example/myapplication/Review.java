@@ -13,6 +13,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Review extends Fragment {
 
+    int id;
+    User author;
+    Movie about;
+    int overall_rating;
+    String text;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

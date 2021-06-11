@@ -13,6 +13,11 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Places extends Fragment {
 
+    int id;
+    String name;
+    String location;
+    Movie current_movies[];
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

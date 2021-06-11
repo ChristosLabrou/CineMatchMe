@@ -13,6 +13,15 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class App extends Fragment {
 
+    User user;
+
+    public void setUser(User new_user) {
+        this.user = new_user;
+    }
+    public User getUser() {
+        return this.user;
+    }
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

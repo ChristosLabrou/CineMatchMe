@@ -13,6 +13,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class UserLite extends User {
 
+    int privilages;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

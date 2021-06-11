@@ -13,6 +13,15 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Subscription extends Fragment {
 
+    int id;
+    float price;
+    enum tier {
+        free,
+        lite,
+        premium
+    }
+    int duration;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

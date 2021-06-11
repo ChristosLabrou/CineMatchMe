@@ -13,6 +13,10 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Statistics extends Fragment {
 
+    int id;
+    User user;
+    String preferences[];
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

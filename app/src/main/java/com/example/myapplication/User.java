@@ -13,6 +13,14 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class User extends Fragment {
 
+    int Id;
+    Chat chats[];
+    User friends[];
+    Subscription subscription;
+    int renown;
+    Statistics statistics;
+
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

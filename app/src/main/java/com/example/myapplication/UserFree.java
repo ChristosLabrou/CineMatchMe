@@ -13,6 +13,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class UserFree extends User {
 
+    int privilages;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
