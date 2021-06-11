@@ -12,7 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 
 public class Places extends Fragment {
-
+    Queries q;
     int Id;
     String Name;
     String Location;
@@ -39,6 +39,15 @@ public class Places extends Fragment {
         return this.Current_movies;
     }
 
+    public boolean getPlaces(){
+        String query = "getPlaces()";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+    }
 
     @Override
     public View onCreateView(

@@ -8,6 +8,16 @@
                                                    android:background="@color/screenBackground">
 
     <!-- TODO: Update blank fragment layout -->
+    <Button
+            android:text="Like"
+            android:background="@drawable/roundbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.289" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="64dp" android:layout_marginStart="64dp"
+            app:layout_constraintEnd_toStartOf="@+id/button6" app:layout_constraintHorizontal_bias="0.018"/>
     <TextView
             android:text="Swiping Screen"
             android:layout_width="251dp"
@@ -19,6 +29,7 @@
 
     <Button
         android:id="@+id/buttonToRate"
+        android:background="@drawable/roundbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
@@ -27,5 +38,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+            android:src="@drawable/movie1"
+            android:layout_width="205dp"
+            android:layout_height="317dp" android:id="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="28dp"/>
+    <Button
+            android:text="Like"
+            android:background="@drawable/roundbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp" app:layout_constraintVertical_bias="0.289"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
