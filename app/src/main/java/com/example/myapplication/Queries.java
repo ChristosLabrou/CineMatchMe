@@ -8,6 +8,9 @@ public class Queries {
 
     Connection c = null;
     Statement stmt = null;
+
+
+
     public void executeQuery( String query) {
       try {
         Class.forName("org.postgresql.Driver");

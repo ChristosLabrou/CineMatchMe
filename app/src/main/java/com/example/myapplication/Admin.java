@@ -5,16 +5,25 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
+
 
 
 public class Admin extends Fragment {
 
     int Privileges;
+    Queries q;
 
+    public boolean acceptAddRequest(String request){
+        String query = "";
+        try{
+            q.executeQuery(query);
+            return true;
+        }catch(Exception e) {
+            return false;
+        }
+    }
 
     @Override
     public View onCreateView(
