@@ -32,12 +32,5 @@ public class User extends Fragment {
                         .navigate(R.id.action_login_to_swiping);
             }
         });
-//        view.findViewById(R.id.gotoprofile).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                NavHostFragment.findNavController(User.this)
-//                        .navigate(R.id.action_swiping_to_profile);
-//            }
-//        });
     }
 }

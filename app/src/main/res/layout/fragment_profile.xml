@@ -7,6 +7,48 @@
                                                    tools:context=".profile" android:id="@+id/frameLayout"
                                                    android:background="@color/screenBackground">
     <EditText
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:inputType="textPersonName"
+            android:text="Male"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/textColors"
+            android:layout_marginEnd="12dp" android:layout_marginRight="12dp"
+            app:layout_constraintStart_toEndOf="@+id/lastname2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" android:layout_marginTop="12dp"/>
+    <TextView
+            android:text="Sex:"
+            android:layout_width="52dp"
+            android:layout_height="37dp" android:id="@+id/lastname3"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="96dp" android:layout_marginStart="96dp" android:textColor="@color/textColors"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/lastname2" android:layout_marginTop="16dp"/>
+    <EditText
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:inputType="textPersonName"
+            android:text="21"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/textColors"
+            android:layout_marginEnd="12dp" android:layout_marginRight="12dp"
+            app:layout_constraintStart_toEndOf="@+id/lastname2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Age:"
+            android:layout_width="58dp"
+            android:layout_height="39dp" android:id="@+id/lastname2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="92dp" android:layout_marginStart="92dp" android:textColor="@color/textColors"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/lastname" android:layout_marginTop="20dp"/>
+    <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
@@ -58,12 +100,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/statistics"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="60dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintHorizontal_bias="0.171" app:layout_constraintVertical_bias="0.616"/>
     <Button
             android:text="Update"
             android:background="@drawable/roundbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/button7"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="48dp" android:layout_marginEnd="48dp"
+            app:layout_constraintVertical_bias="0.616"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
