@@ -6,16 +6,19 @@
             app:startDestination="@id/login">
 
     <fragment
-            android:id="@+id/login"
-            android:name="com.example.myapplication.User"
-            android:label="Login"
-            tools:layout="@layout/login">
+            android:id="@+id/FirstFragment"
+            android:name="com.example.myapplication.FirstFragment"
+            android:label="@string/first_fragment_label"
+            tools:layout="@layout/fragment_first">
+
         <action
-            android:id="@+id/action_login_to_addMovieFragment"
-            app:destination="@id/addMovieFragment" />
+                android:id="@+id/action_FirstFragment_to_SecondFragment"
+                app:destination="@id/SecondFragment"
+        />
         <action
-            android:id="@+id/action_login_to_rateMovie"
-            app:destination="@id/rateMovie" />
+                android:id="@+id/action_FirstFragment_to_Login"
+                app:destination="@id/login"
+        />
     </fragment>
     <fragment
         android:id="@+id/addMovieFragment"
@@ -24,6 +27,17 @@
         <action
             android:id="@+id/action_addMovieFragment_to_searchTitleFragment"
             app:destination="@id/searchTitleFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/SecondFragment"
+            android:name="com.example.myapplication.SecondFragment"
+            android:label="@string/second_fragment_label"
+            tools:layout="@layout/fragment_second">
+
+        <action
+                android:id="@+id/action_SecondFragment_to_FirstFragment"
+                app:destination="@id/FirstFragment"/>
+        <argument android:name="myArg" app:argType="integer"/>
     </fragment>
     <fragment
         android:id="@+id/searchTitleFragment"
@@ -48,6 +62,38 @@
             android:id="@+id/action_rateMovie_to_rateTraitsFragment"
             app:destination="@id/rateTraitsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/rateTraitsFragment"
+        android:name="com.example.myapplication.rateTraitsFragment"
+        android:label="fragment_rate_traits"
+        tools:layout="@layout/fragment_rate_traits" />
+    <fragment
+            android:id="@+id/login"
+            android:name="com.example.myapplication.User"
+            android:label="Login"
+            tools:layout="@layout/login">
+
+
+        <action android:id="@+id/action_login_to_swiping" app:destination="@id/swiping"/>
+    </fragment>
+    <fragment android:id="@+id/swiping" android:name="com.example.myapplication.swiping"
+              android:label="fragment_swiping" tools:layout="@layout/fragment_swiping"/>
+
+
+    <fragment android:id="@+id/profile" android:name="com.example.myapplication.profile"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile">
+        <action android:id="@+id/action_profile_to_statistic" app:destination="@id/statistic"/>
+    </fragment>
+
+    <fragment android:id="@+id/statistics_users" android:name="com.example.myapplication.statistics_users"
+              android:label="fragment_statistics_users" tools:layout="@layout/fragment_statistics_users"/>
+
+    <fragment android:id="@+id/statistic" android:name="com.example.myapplication.statistic"
+              android:label="fragment_statistic" tools:layout="@layout/fragment_statistic">
+        <action android:id="@+id/action_statistic_to_statistics_users" app:destination="@id/statistics_users"/>
+    </fragment>
+
+
     <fragment
         android:id="@+id/rateTraitsFragment"
         android:name="com.example.myapplication.rateTraitsFragment"

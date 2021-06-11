@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".statistics_users" android:id="@+id/frameLayout3"
+                                                   android:background="@color/screenBackground">
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBar7"
+            android:scrollbarSize="30dp" android:max="100" android:progress="10"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar6" android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+    <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content" android:id="@+id/textView15" android:textSize="30sp"
+            android:textColor="@color/textColors" android:text="20 Users"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBar6"
+            android:scrollbarSize="30dp" android:max="100" android:progress="90"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar5"/>
+    <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content" android:id="@+id/textView14" android:textSize="30sp"
+            android:textColor="@color/textColors" android:text="100 Users"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"/>
+    <TextView
+            android:text="Here you can see the ammount of users and the percentage of the similarity between your preferences."
+            android:layout_width="407dp"
+            android:layout_height="94dp" android:id="@+id/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:textSize="25dp"
+            android:textColor="@color/textColors"/>
+    <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content" android:id="@+id/textView10" android:textSize="30sp"
+            android:textColor="@color/textColors" android:text="15 Users"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_marginTop="4dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="256dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBar5"
+            android:scrollbarSize="30dp" android:max="100" android:progress="47"
+            app:layout_constraintStart_toEndOf="@+id/textView10" app:layout_constraintTop_toBottomOf="@+id/title"/>
+    <Button
+            android:text="Load more"
+            android:layout_width="114dp"
+            android:layout_height="43dp" android:id="@+id/button5"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_marginTop="188dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            android:background="@color/buttonColors"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

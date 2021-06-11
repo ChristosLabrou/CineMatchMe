@@ -6,4 +6,8 @@
           android:title="@string/action_settings"
           android:orderInCategory="100"
           app:showAsAction="never"/>
+    <item android:id="@+id/profile"
+          android:title="@string/profile_dropdown_option"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
 </menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/screenBackground">
+
+    <TextView
+            android:text="Press here to view statistics about other users !"
+            android:layout_width="130dp"
+            android:layout_height="56dp" android:id="@+id/textView4"
+            android:textColor="@color/textColors"
+            tools:layout_editor_absoluteX="140dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="92dp" android:background="#032860"/>
+    <Button
+            android:text="Movies !"
+            android:layout_width="75dp"
+            android:layout_height="35dp" android:id="@+id/button4"
+            android:textColorHint="#2D8F5A" android:background="@color/buttonColors"
+            tools:layout_editor_absoluteX="168dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.155"/>
+    <TextView
+            android:text="Statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.151" android:textSize="36sp" android:textColor="#00A9BF"/>
+    <Button
+            android:text="Users !"
+            android:layout_width="72dp"
+            android:layout_height="39dp" android:id="@+id/userstatistics"
+            android:textColorHint="#2D8F5A" android:background="@color/buttonColors"
+            tools:layout_editor_absoluteX="169dp" app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginTop="28dp"/>
+    <TextView
+            android:text="Press here to view statistics about other movies !"
+            android:layout_width="130dp"
+            android:layout_height="56dp" android:id="@+id/textView2"
+            android:textColor="@color/textColors"
+            tools:layout_editor_absoluteX="140dp"
+            app:layout_constraintTop_toBottomOf="@+id/userstatistics" android:layout_marginTop="48dp"
+            android:background="#032860" android:filterTouchesWhenObscured="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
