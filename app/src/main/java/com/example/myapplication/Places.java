@@ -13,10 +13,32 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Places extends Fragment {
 
-    int id;
-    String name;
-    String location;
-    Movie current_movies[];
+    int Id;
+    String Name;
+    String Location;
+    Movie Current_movies[];
+
+    public void setName(String name) {
+        this.Name = name;
+    }
+    public String getName() {
+        return this.Name;
+    }
+
+    public void setLocation(String location) {
+        this.Location = location;
+    }
+    public String getLocation() {
+        return this.Location;
+    }
+
+    public void setCurrent_movies(Movie[] updatedMovieList) {
+        this.Current_movies = updatedMovieList;
+    }
+    public Movie[] getCurrent_movies() {
+        return this.Current_movies;
+    }
+
 
     @Override
     public View onCreateView(

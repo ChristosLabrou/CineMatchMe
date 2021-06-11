@@ -14,10 +14,38 @@ import androidx.navigation.fragment.NavHostFragment;
 public class Review extends Fragment {
 
     int id;
-    User author;
-    Movie about;
-    int overall_rating;
-    String text;
+    User Author;
+    Movie About;
+    int Overall_rating;
+    String Text;
+
+    public void setAuthor(User author) {
+        this.Author = author;
+    }
+    public User getAuthor() {
+        return this.Author;
+    }
+
+    public void setAbout(Movie movie) {
+        this.About = movie;
+    }
+    public Movie getAbout() {
+        return this.About;
+    }
+
+    public void setText(String text) {
+        this.Text = text;
+    }
+    public String getText() {
+        return this.Text;
+    }
+
+    public void setOverall_rating(int rating) {
+        this.Overall_rating = rating;
+    }
+    public int getOverall_rating() {
+        return this.Overall_rating;
+    }
 
     @Override
     public View onCreateView(

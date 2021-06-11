@@ -15,7 +15,14 @@ public class Statistics extends Fragment {
 
     int id;
     User user;
-    String preferences[];
+    String Preferences[];
+
+    public void setPreferences(String[] newPreferences) {
+        this.Preferences = newPreferences;
+    }
+    public String[] getPreferences() {
+        return this.Preferences;
+    }
 
     @Override
     public View onCreateView(
