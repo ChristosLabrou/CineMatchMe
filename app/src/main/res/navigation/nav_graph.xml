@@ -94,9 +94,4 @@
     </fragment>
 
 
-    <fragment
-        android:id="@+id/rateTraitsFragment"
-        android:name="com.example.myapplication.rateTraitsFragment"
-        android:label="fragment_rate_traits"
-        tools:layout="@layout/fragment_rate_traits" />
 </navigation>

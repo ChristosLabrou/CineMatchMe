@@ -57,7 +57,7 @@ public class addMovieFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        Toolbar mToolbar = getActivity().findViewById(R.id.toolbar2);
+        Toolbar mToolbar = getActivity().findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(mToolbar);
 
     }
